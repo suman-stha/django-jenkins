@@ -13,8 +13,6 @@ node {
             sh 'env/bin/python3 manage.py test --settings=config.settings.development --testrunner=tests.test_runners.NoDbTestRunner'
     }
 
-    catch (err) {
-        throw err
-    }
+
 
 }
